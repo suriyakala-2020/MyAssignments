@@ -1,4 +1,4 @@
-package week4.day3.homeassignment;
+package week4.day3;
 
 import java.time.Duration;
 
@@ -54,7 +54,7 @@ public class LegalEntity {
         //Enter Name as 'Salesforce Automation by *Your Name*'(Parameterized value) 
         //String[][] name= {{"Salesforce Automation by Suriyakala"}};
         driver.findElement(By.xpath("//label[text()='Legal Entity Name']/following-sibling::div/input")).sendKeys(name);
-      //Click on the 'Save' button and verify the Opportunity Name.
+      //Click on the 'Save' button and verify the Entity Name.
        driver.findElement(By.xpath("//button[@name='SaveEdit']")).click();
        String toastMessage = driver.findElement(By.xpath("//span[@class='toastMessage slds-text-heading--small forceActionsText']")).getText();
        System.out.println(toastMessage);
